@@ -5,6 +5,27 @@ designed to work at sea aboard MSC Meraviglia via Starlink.
 
 ---
 
+## Start Here — Orientation Workbooks
+
+**Before diving into any project, work through these two workbooks first.**
+They are in the `orientation-workbooks/` folder and cover the two tools
+you will use every single session.
+
+| Workbook | File | What It Covers |
+|---|---|---|
+| Google IDX | `orientation-workbooks/IDX_Orientation_Workbook.md` | IDE setup, terminal, TypeScript, Python, Firebase, Git — 7 checkpoints |
+| Gemini AI Studio | `orientation-workbooks/Gemini_AI_Studio_Workbook.md` | Prompt formula, System Instructions, code generation, error fixing — 9 checkpoints |
+
+**Recommended order:**
+1. Work through the IDX workbook first — get your environment solid
+2. Work through the Gemini AI Studio workbook — get fluent with prompting
+3. Then open any project `WORKBOOK.md` in the python or typescript folders and start building
+
+> Both workbooks have checkpoints and a scorecard. Aim for 5+ on IDX
+> and 7+ on Gemini AI Studio before starting your first project.
+
+---
+
 ## What This Is
 
 Two parallel workbook sets — one in Python, one in TypeScript — covering the same
@@ -220,6 +241,14 @@ Work through it in IDX. If signal drops your code is always saved in GitHub.
 ## Repo Structure
 
 ```
+ipad-workbooks/                        ← you are here (root repo)
+├── README.md                          ← this file
+├── orientation-workbooks/
+│   ├── IDX_Orientation_Workbook.md    ← start here (1 of 2)
+│   └── Gemini_AI_Studio_Workbook.md   ← start here (2 of 2)
+├── ipad-workbooks-python/
+└── ipad-workbooks-typescript/
+
 ipad-workbooks-python/
 ├── README.md                  ← Python repo overview (coming soon)
 ├── firebase/
