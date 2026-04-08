@@ -16,7 +16,10 @@ To keep this "minimum friction," you need to visualize where your work actually 
 * **The iPad (Edge) is a "Mobile Terminal":** A portable way to walk into the vault from a lounge chair using Starlink.
 * **Working Copy (iPad App) is the "Safe":** A small, physical copy of the vault kept inside your iPad for when the internet (the "bridge" to the vault) goes out.
 
-
+---
+## 🔄 The Sync Mantra
+* **Terminals (Mac/iPad):** "Pull before you play, Push when you're done."
+* **The Vault (GitHub):** Always the source of truth. If a terminal looks wrong, hit **Fetch/Pull**.
 
 ---
 
