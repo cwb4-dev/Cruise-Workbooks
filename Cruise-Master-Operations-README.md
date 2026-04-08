@@ -1,92 +1,87 @@
-I hear you—"Round One" is about you staying in the driver's seat. You want the AI to provide the components exactly as requested, but you’ll be the one hitting "Run" and verifying the results. It’s the "Couch Potato" version of manual control: you let the AI do the heavy lifting of writing the code, but you keep your hands on the steering wheel.
-
-Here is your **Master Operations Manual**, updated with the specific prompt style you prefer, organized for your Mac-to-iPad workflow.
+This is the definitive "Ground Zero" guide for your crossing. It treats your technical setup like a high-end home security system: elegant, automated, and fail-safe. 
 
 ---
 
-# 🚢 Atlantic Data Lab: Master Operations Manual (2026)
-**Philosophy:** Simple, elegant, couch potato.  
-**Hardware:** Mac (Woodbury) ➡️ GitHub ➡️ iPad (Atlantic/Starlink).  
-**Stack:** Firebase Studio (Edge Browser) + Python + Firestore.
+# 🚢 Atlantic Data Lab: Master Operations Manual
+**Guiding Principle:** Simple, elegant, couch potato.  
+**Connectivity:** Woodbury Fiber ➡️ Starlink Satellite.
 
 ---
 
-## 🛠 Phase 1: The Woodbury Launch (Mac Setup)
+## 🏛 The Ecosystem: The "Main Vault" Concept
+To keep this "minimum friction," you need to visualize where your work actually lives. 
 
-1.  **GitHub Repo:** Create a **Private** repository named `Cruise-Workbook-2026`. Do not initialize with any files.
-2.  **The Magic Key (Token):** Go to GitHub *Settings > Developer Settings > Tokens (classic)*. Generate a token with `repo` scopes. **Save this in Google Keep.**
-3.  **Firebase Studio:** Go to [studio.firebase.google.com](https://studio.firebase.google.com) on your Mac. 
-    * Create a New Workspace.
-    * Open the Terminal and link it to GitHub:
-        `git remote add origin https://github.com/<USER>/Cruise-Workbook-2026.git`
-4.  **The Seed:** Create this `README.md` in your project root, commit, and push.
+* **GitHub is the "Main Vault":** It’s a secure locker in the cloud. It holds your code, your logs, and your history.
+* **The Mac is a "Terminal":** A big-screen way to walk into the vault and move things around while you’re at home.
+* **The iPad (Edge) is a "Mobile Terminal":** A portable way to walk into the vault from a lounge chair using Starlink.
+* **Working Copy (iPad App) is the "Safe":** A small, physical copy of the vault kept inside your iPad for when the internet (the "bridge" to the vault) goes out.
 
----
 
-## 📂 Phase 2: The 8-App Build Plan
-Use these prompts in the **Gemini Sidebar** (Firebase Studio). For each, create the file manually, then paste the prompt.
-
-### **Level 1: The Essentials**
-
-**App 1: Weather Advisor (`weather.py`)**
-* **The Prompt:** "@folder Create `weather.py`. Include: 1. Input for temperature and wind speed. 2. Logic suggesting 'Library' (under 60°F) or 'Lido Deck' (over 60°F). 3. Simple Woodbury-style recommendations."
-* **Test Case:** "Input 55°F; verify it suggests the Library."
-
-**App 2: Utility Kit (`utils.py`)**
-* **The Prompt:** "@folder Create `utils.py`. Include: 1. 12-character secure password generator. 2. USD to Euro converter (rate 0.92). 3. Simple print output for both."
-* **Test Case:** "Convert $100; verify result is 92.0."
-
-**App 3: Activity Logger (`logger.py`)**
-* **The Prompt:** "@folder Create `logger.py`. Include: 1. Daily text log saved to `cruise_log.txt`. 2. Bayesian mood prior (0.5) to predict tomorrow's mood based on today's success. 3. Save result to Firestore."
-* **Test Case:** "Log a 'Great Day'; verify the posterior probability is greater than 0.5."
-
-**App 4: Basic Blackjack (`bj_simple.py`)**
-* **The Prompt:** "@folder Create `bj_simple.py`. Include: 1. Monte Carlo simulation (1,000 trials). 2. Calculation of 'Bust' percentage for a hand of 16. 3. Simple percentage output."
-* **Test Case:** "Run for a hand of 11; verify bust chance is 0%."
 
 ---
 
-### **Level 2: The Deep Dives**
+## 💻 Phase 1: Mac Ground Zero (Building the Vault)
 
-**App 5: Blackjack Pro (`bj_pro.py`)**
-* **The Prompt:** "@folder Create `bj_pro.py`. Include: 1. Strategy comparison (Basic vs Aggressive). 2. Dealer upcard heatmap analysis using Matplotlib. 3. Ace handling (soft vs hard hands). 4. Convergence study showing win-rate over 100,000 sims. 5. Save to Firestore."
-* **Test Case:** "Compare Win Rate of Dealer 6 vs Dealer Ace; verify Dealer 6 is higher."
+### **1. Create the Vault (GitHub)**
+* Go to [GitHub](https://github.com/new "Create your Private Repository") and create a **Private** repo named `Cruise-Workbook-2026`.
+* **Important:** Go to *Settings > Developer Settings > Tokens (classic)* and generate a Personal Access Token (PAT) with `repo` scopes. Save this in **Google Keep**.
 
-**App 6: Backgammon Analyst (`backgammon.py`)**
-* **The Prompt:** "@folder Create `backgammon.py`. Include: 1. Dice probability analyzer. 2. Blot vulnerability heatmap. 3. Bearing off probability simulator. 4. Pip count tracker. 5. Opening move analyzer. 6. Save data to Firestore."
-* **Test Case:** "Run 10,000 rolls; verify 'Double 6' occurs roughly 2.7% of the time."
-
----
-
-### **Level 3: The Statistical Lab**
-
-**App 7: Monte Carlo Master (`monte_carlo.py`)**
-* **The Prompt:** "@folder Create `monte_carlo.py`. Include: 1. Pi estimation (Circle method). 2. Gambler's Ruin simulation. 3. Stock portfolio risk. 4. Project schedule risk (PERT). 5. Generate Matplotlib histograms and save to Firestore."
-* **Test Case:** "Run Pi estimation with 1M points; verify result is 3.14 +/- 0.01."
-
-**App 8: The Bayesian Engine (`bayesian_engine.py`)**
-* **The Prompt:** "@folder Create `bayesian_engine.py`. Include: 1. Coin fairness analyzer. 2. A/B Test analyzer. 3. Changepoint detection (trends). 4. Linear regression with uncertainty shading. 5. Save all posteriors to Firestore."
-* **Test Case:** "Input 10 heads and 2 tails. Verify the 'fairness' posterior peaks near 0.83."
+### **2. Launch Firebase Studio (IDX) on Mac**
+* Go to [Firebase Studio](https://studio.firebase.google.com "Open your Cloud Workspace").
+* **The Handshake:** Open the Terminal at the bottom and link it to the vault:
+    `git remote add origin https://github.com/<USER>/Cruise-Workbook-2026.git`
 
 ---
 
-## 🔄 Phase 3: The iPad ➡️ Starlink Workflow
+## 📂 Phase 2: Mac Builds (Apps 1 & 2)
 
-1.  **Retrieval:** In Edge on iPad, go to Firebase Studio and **Import from GitHub**.
-2.  **The Token Handshake:** If the iPad blocks the login popup, use the Terminal:
+### **The "Source Control" Secret**
+To save your work to the Vault, you must use the **Source Control Icon**.
+* **Look:** On the far-left vertical strip, it’s the **third icon down**. It looks like a **stylized "Y" or a tree branch**.
+* **Action:** Click it ➡️ Type a message (e.g., "Seed App 1") ➡️ Click **Commit** ➡️ Click **Sync Changes**.
+
+### **The Apps**
+* **App 1: Weather Advisor (`/weather.py`)**: Logic for Lido vs. Library.
+* **App 2: Utility Kit (`/utils.py`)**: Password generator and USD/Euro converter.
+
+---
+
+## 📱 Phase 3: The Atlantic iPad Pivot (Apps 3-8)
+
+### **1. The iPad Browser (Edge)**
+* Open Edge ➡️ [Firebase Studio](https://studio.firebase.google.com).
+* **Import:** Select "Import from GitHub" and choose your repo.
+* **The Token Fix:** If the iPad won't log in, go to the Terminal and paste:
     `git remote set-url origin https://<YOUR_TOKEN>@github.com/<USER>/Cruise-Workbook-2026.git`
-3.  **Execution:** Run scripts via the terminal: `python blackjack_pro.py`.
-4.  **Visuals:** Matplotlib charts will save as `.png` files in the sidebar. Tap to view your heatmaps.
-5.  **Persistence:** Commit and Push regularly. If you lose signal, your work is saved in the cloud; once Starlink reconnects, hit **Sync**.
+
+### **2. Building Apps 3 - 8 (The Prompts)**
+
+| App | The Sidebar Prompt | Test Case |
+| :--- | :--- | :--- |
+| **3. Logger** | "@folder Create `logger.py`. Log to `log.txt` + Bayesian mood predictor + Firestore." | Log 'Great Day'; verify posterior > 0.5. |
+| **4. Basic BJ** | "@folder Create `bj_simple.py`. Monte Carlo (1k trials) for bust % on hand of 16." | Hand of 11; verify 0% bust. |
+| **5. Pro BJ** | "@folder Create `bj_pro.py`. Strategy comparison + Dealer Heatmap + Firestore." | Compare Dealer 6 vs. Ace win rates. |
+| **6. Backgammon** | "@folder Create `backgammon.py`. Pip tracker + Blot heatmap + Firestore." | Verify 'Double 6' is ~2.7% over 10k rolls. |
+| **7. Monte Carlo** | "@folder Create `monte_carlo.py`. Pi estimation + Gambler's Ruin + Risk histograms." | Pi with 1M points; verify 3.14. |
+| **8. Bayesian** | "@folder Create `bayesian_engine.py`. Coin fairness + A/B test + Firestore." | 10 heads/2 tails; verify peak near 0.83. |
 
 ---
 
-## 🎁 Extra Goodies for the iPad
+## 🛡 Phase 4: The iPad "Insurance Policy" (Working Copy)
+If you want to view your code without an internet connection:
+1.  Open the **Working Copy** app.
+2.  Tap **+** ➡️ **Clone Repository**.
+3.  Paste your GitHub URL and use your **Token** as the password.
+4.  **The Result:** You now have a physical copy of the "Vault" on your iPad. If Starlink fails, open this app to read your code.
 
-* **Keyboard Shortcuts:** Use `Cmd + ~` to toggle the terminal quickly.
-* **Firestore Viewing:** Keep the Firebase Console open in a second tab to see your data "land" in real-time.
-* **Split View:** Keep this `README.md` on the left and your code on the right.
+---
+
+## 🚀 The Couch Potato Workflow Summary
+1.  **Code** in the Edge Browser (Firebase Studio).
+2.  **Save** to the Vault (GitHub) using the **"Y" Branch Icon** in the sidebar.
+3.  **Check** your results in **Firestore** on your phone.
+4.  **Relax** knowing your work is in the cloud vault and on your iPad's physical drive.
 
 
 
-**Ready to roll?** Create the repo on your Mac, push this README, and we can start with **App 1** whenever you're ready. Which one are you tackling first?
+Does this "Main Vault" structure feel more solid? Since we’re at "Ground Zero," would you like to generate the code for **App 1 (Weather)** on your Mac right now to test the "Y" Branch sync?
