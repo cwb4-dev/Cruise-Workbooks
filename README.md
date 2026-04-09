@@ -22,6 +22,46 @@ To keep this "minimum friction," you need to visualize where your work actually 
 * **The Vault (GitHub):** Always the source of truth. If a terminal looks wrong, hit **Fetch/Pull**.
 
 ---
+## How the file structure is setup
+In your "Couch Potato" ecosystem, we’ve organized the folders this way to separate the quick wins from the heavy math:
+
+The Three-Tier Logic
+
+/Essentials (Apps 1–4):
+
+These are low-friction and high-utility.
+
+The Weather Advisor, Utility Kit (passwords/currency), Activity Logger, and Basic Blackjack. * You’ll likely run these every morning with your coffee to check the temperature or log your thoughts.
+
+/Analytics (Apps 5–6):
+
+These are your "Strategy" tools.
+
+Blackjack Pro (Heatmaps) and Backgammon. * You use these when you're actually sitting down to play or study the odds.
+
+/Lab (Apps 7–8):
+
+This is the "Deep Water" data science.
+
+Monte Carlo and the Bayesian Engine. * These are for when you're feeling maximum curiosity and want to run a million simulations to see how probability actually works.
+
+---
+
+### **The Three-Tier Logic**
+
+1.  **/Essentials (Apps 1–4):**
+    * These are low-friction and high-utility. 
+    * *The Weather Advisor, Utility Kit (passwords/currency), Activity Logger, and Basic Blackjack.* * You’ll likely run these every morning with your coffee to check the temperature or log your thoughts.
+
+2.  **/Analytics (Apps 5–6):**
+    * These are your "Strategy" tools. 
+    * *Blackjack Pro (Heatmaps) and Backgammon.* * You use these when you're actually sitting down to play or study the odds.
+
+3.  **/Lab (Apps 7–8):**
+    * This is the "Deep Water" data science. 
+    * *Monte Carlo and the Bayesian Engine.* * These are for when you're feeling maximum curiosity and want to run a million simulations to see how probability actually works.
+
+---
 
 ## 💻 Phase 1: Mac Ground Zero (Building the Vault)
 
