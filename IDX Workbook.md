@@ -4,7 +4,6 @@ Copy the entire block below and save it as `CRUISE_MASTER_WORKBOOK.md` in your r
 
 ---
 
-```markdown
 # 🚢 Atlantic Data Lab: Master Operations Manual & IDX Workbook (2026)
 **Guiding Principle:** Simple, elegant, couch potato.  
 **Workflow:** Mac (Woodbury Setup) ➡️ GitHub (The Vault) ➡️ iPad (Atlantic Execution).
@@ -97,4 +96,3 @@ Use these "Manual Control" prompts in the Gemini sidebar.
 2.  **Push when you're done:** Always hit **Commit & Sync** to send your work back to the Vault.
 3.  **Chart Check:** All Matplotlib charts save as `.png` files. Tap to view in the sidebar.
 4.  **Redundancy:** Use **Working Copy** once a day to "Pull" a physical backup to your iPad.
-```
