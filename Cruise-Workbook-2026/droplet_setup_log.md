@@ -13,7 +13,7 @@
 |OS            |Ubuntu 24.04 LTS       |
 |Plan          |Basic $4/mo            |
 |Sign-on Credit|$200 (≈ 50 months free)|
-|IP Address    |*(paste your IP here)* |
+|IP Address    |147.182.190.94         |
 |Created       |*(paste date here)*    |
 |Region        |*(paste region here)*  |
 
