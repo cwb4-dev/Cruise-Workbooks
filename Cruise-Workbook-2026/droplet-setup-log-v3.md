@@ -1,7 +1,6 @@
 # DigitalOcean Droplet Setup Log
 
-**Atlantic Data Lab -- MSC Meraviglia 2026**
-**Version 2**
+**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 3**
 
 -----
 
@@ -14,19 +13,19 @@
 |Plan          |Basic $4/mo            |
 |Sign-on Credit|$200 (≈ 50 months free)|
 |IP Address    |147.182.190.94         |
-|Created       |*(paste date here)*    |
+|Created       |April 28, 2026         |
 |Region        |*(paste region here)*  |
 
 -----
 
 ## Blink Shell Host Config
 
-|Setting |Value              |
-|--------|-------------------|
-|Label   |AI-Server          |
-|Hostname|*(your Droplet IP)*|
-|User    |root               |
-|Mosh    |ON                 |
+|Setting |Value         |
+|--------|--------------|
+|Label   |AI-Server     |
+|Hostname|147.182.190.94|
+|User    |root          |
+|Mosh    |ON            |
 
 Connect with:
 
@@ -171,3 +170,56 @@ claude --server-mode           # press Space for QR code
 
 *DigitalOcean · Ubuntu 24.04 · Claude Code · Blink Shell*
 *MSC Meraviglia -- Starlink Maritime -- 2026*
+
+-----
+
+## Mosh Setup & Troubleshooting ✅
+
+### What Was Done
+
+```bash
+apt install -y mosh          # installed on Droplet
+ufw allow 60000:61000/udp    # opened UDP ports (firewall was inactive anyway)
+reboot                       # required after apt upgrade kernel update
+```
+
+### Blink Config
+
+- Host config: Alias = `AI-Server`, Hostname = `147.182.190.94`, User = `root`
+- No explicit Mosh toggle in this version of Blink -- Mosh is invoked via command
+
+### How to Connect
+
+```bash
+# From Blink prompt (not from inside Droplet)
+mosh --verbose root@147.182.190.94
+# Enter password when prompted
+```
+
+### Gotchas Encountered
+
+- **Kernel mismatch error** on first Mosh attempt -- fixed by Power Cycling Droplet from DO console
+- **`mosh AI-Server` falls back to SSH silently** -- use direct IP instead: `mosh --verbose root@147.182.190.94`
+- **`--ssh` flag removed in Mosh 1.4.0** -- old syntax no longer works
+- **`$SSH_CONNECTION` returns IP even on Mosh 1.4.0** -- not a reliable indicator in this version
+- **Real test:** Put iPad to sleep 30 seconds, wake up, type `ls` -- if it responds immediately, Mosh is working ✓
+
+### Verification
+
+- iPad slept and woke -- session reconnected instantly ✓
+- Mosh confirmed working despite `$SSH_CONNECTION` showing IP (Mosh 1.4.0 behaviour)
+
+-----
+
+## Step 4 -- Authenticate Claude Code ⚠️ IN PROGRESS
+
+```bash
+echo 'export ANTHROPIC_API_KEY="sk-ant-your-key-here"' >> ~/.bashrc
+source ~/.bashrc
+echo $ANTHROPIC_API_KEY       # verify key is set
+claude -p "Say hello in one word"   # smoke test
+```
+
+- API key obtained from console.anthropic.com → API Keys → Create Key
+- **Issue:** "Invalid API key" error -- troubleshooting in progress
+- **Next:** Verify key was copied completely and re-export
