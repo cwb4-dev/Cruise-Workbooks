@@ -1,6 +1,6 @@
 # DigitalOcean Droplet Setup Log
 
-**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 3**
+**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 4**
 
 -----
 
@@ -211,7 +211,7 @@ mosh --verbose root@147.182.190.94
 
 -----
 
-## Step 4 -- Authenticate Claude Code ⚠️ IN PROGRESS
+## Step 4 -- Authenticate Claude Code ✅
 
 ```bash
 echo 'export ANTHROPIC_API_KEY="sk-ant-your-key-here"' >> ~/.bashrc
@@ -221,5 +221,29 @@ claude -p "Say hello in one word"   # smoke test
 ```
 
 - API key obtained from console.anthropic.com → API Keys → Create Key
-- **Issue:** "Invalid API key" error -- troubleshooting in progress
-- **Next:** Verify key was copied completely and re-export
+- **Gotcha:** Key was blank -- `~.bashrc` had not been reloaded, key was never saved from earlier session
+- **Fix:** Re-exported key and ran `source ~/.bashrc` -- key confirmed set with `echo $ANTHROPIC_API_KEY`
+- **Smoke test:** `claude -p "Say hello in one word"` → returned "Hello" ✓
+- **Key is permanent** -- saved in ~/.bashrc, survives reboots and Mosh reconnects
+
+-----
+
+## Step 5 -- GitHub SSH + Clone Repo *(next)*
+
+```bash
+# Generate SSH key on Droplet
+ssh-keygen -t ed25519 -C "your_email@example.com"
+cat ~/.ssh/id_ed25519.pub     # copy and add to GitHub
+
+# Test connection
+ssh -T git@github.com
+
+# Clone repo and create folders
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+cd ~
+git clone git@github.com:your_username/Cruise-Workbook-2026.git
+cd Cruise-Workbook-2026
+mkdir -p Essentials Analytics Lab
+ls -la
+```
