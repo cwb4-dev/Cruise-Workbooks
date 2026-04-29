@@ -1,6 +1,6 @@
 # DigitalOcean Droplet Setup Log
 
-**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 6**
+**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 7**
 
 -----
 
@@ -337,3 +337,24 @@ mosh --verbose root@147.182.190.94
 ```
 
 Not `ssh AI-Server` -- SSH drops when iPad sleeps, Mosh survives.
+
+-----
+
+## Project Folder Structure
+
+```
+~/at-sea-ipad-workbooks/Cruise-Workbook-2026/
+├── Essentials/
+│   ├── weather.py        ← App 1
+│   ├── utils.py          ← App 2
+│   ├── logger.py         ← App 3
+│   └── bj_simple.py      ← App 4
+├── Analytics/
+│   ├── bj_pro.py         ← App 5
+│   └── backgammon.py     ← App 6
+└── Lab/
+    ├── monte_carlo.py    ← App 7
+    └── bayesian_engine.py ← App 8
+```
+
+Each folder also contains an `app_log.md` tracking build prompt, test results, and sample output.
