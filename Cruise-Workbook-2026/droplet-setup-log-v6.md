@@ -1,6 +1,6 @@
 # DigitalOcean Droplet Setup Log
 
-**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 5**
+**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 6**
 
 -----
 
@@ -283,3 +283,57 @@ All steps done. Full stack is live:
 |Project folders             |✅ Essentials / Analytics / Lab              |
 
 **Ready to build the 8 apps.**
+
+-----
+
+## Mosh Session Management
+
+### Check Active Sessions
+
+```bash
+who
+```
+
+Shows all active Mosh sessions with PID, date, and connection info.
+
+### Find Session PIDs
+
+```bash
+ps aux | grep mosh
+```
+
+Lists all running Mosh server processes with their PIDs.
+
+### Kill a Specific Session
+
+```bash
+kill 1102    # replace 1102 with the actual PID
+```
+
+### Verify Session is Gone
+
+```bash
+who
+```
+
+### What the Detached Session Message Means
+
+When you reconnect and see:
+
+```
+Mosh: You have a detached Mosh session on this server (mosh [1102]).
+```
+
+It means a previous session is still alive on the Droplet from before your iPad slept.
+
+- Press **Enter** to start a fresh session alongside it
+- Then kill the old one using the steps above
+- You should only ever have one Mosh session running
+
+### Always Connect With
+
+```bash
+mosh --verbose root@147.182.190.94
+```
+
+Not `ssh AI-Server` -- SSH drops when iPad sleeps, Mosh survives.
