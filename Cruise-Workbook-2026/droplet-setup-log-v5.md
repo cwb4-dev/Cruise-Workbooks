@@ -1,6 +1,6 @@
 # DigitalOcean Droplet Setup Log
 
-**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 4**
+**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 5**
 
 -----
 
@@ -228,7 +228,7 @@ claude -p "Say hello in one word"   # smoke test
 
 -----
 
-## Step 5 -- GitHub SSH + Clone Repo *(next)*
+## Step 5 -- GitHub SSH + Clone Repo ✅
 
 ```bash
 # Generate SSH key on Droplet
@@ -247,3 +247,39 @@ cd Cruise-Workbook-2026
 mkdir -p Essentials Analytics Lab
 ls -la
 ```
+
+### Notes
+
+- SSH key generated at `/root/.ssh/id_ed25519.pub`
+- Key added to GitHub → cwb4-dev → Settings → SSH keys → `Cruise-Droplet`
+- **Gotcha:** `Cruise-Workbook-2026` is a folder inside the `at-sea-ipad-workbooks` repo, not its own repo
+- **Correct clone command:**
+
+```bash
+git clone git@github.com:cwb4-dev/at-sea-ipad-workbooks.git
+```
+
+- Navigated into project: `cd at-sea-ipad-workbooks/Cruise-Workbook-2026`
+- Created folders: `mkdir -p Essentials Analytics Lab` ✓
+- Git identity set globally ✓
+- **Result:** Full folder structure confirmed -- Essentials, Analytics, Lab, 99_Archive, plus existing md files ✓
+
+-----
+
+## Setup Complete ✅
+
+All steps done. Full stack is live:
+
+|Component                   |Status                                      |
+|----------------------------|--------------------------------------------|
+|DigitalOcean Droplet        |✅ Running -- 147.182.190.94                  |
+|Ubuntu 24.04 + Python 3.12.3|✅                                           |
+|Swap (1GB)                  |✅                                           |
+|Mosh                        |✅ Confirmed working                         |
+|Claude Code 2.1.119         |✅                                           |
+|Anthropic API Key           |✅ Authenticated                             |
+|GitHub SSH                  |✅ cwb4-dev connected                        |
+|Repo cloned                 |✅ at-sea-ipad-workbooks/Cruise-Workbook-2026|
+|Project folders             |✅ Essentials / Analytics / Lab              |
+
+**Ready to build the 8 apps.**
