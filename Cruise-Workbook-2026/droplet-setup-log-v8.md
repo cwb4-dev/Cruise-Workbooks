@@ -1,6 +1,6 @@
 # DigitalOcean Droplet Setup Log
 
-**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 7**
+**Atlantic Data Lab -- MSC Meraviglia 2026** | **Version 8**
 
 -----
 
@@ -358,3 +358,40 @@ Not `ssh AI-Server` -- SSH drops when iPad sleeps, Mosh survives.
 ```
 
 Each folder also contains an `app_log.md` tracking build prompt, test results, and sample output.
+
+-----
+
+## Git Sync Workflow
+
+**Source of truth is always GitHub.**
+
+### Working Copy → Droplet
+
+```
+Working Copy → push → GitHub → git pull → Droplet
+```
+
+1. Make changes in Working Copy on iPad
+1. Commit and push to GitHub from Working Copy
+1. On the Droplet pull the latest:
+
+```bash
+cd ~/at-sea-ipad-workbooks/Cruise-Workbook-2026
+git pull
+```
+
+### Droplet → Working Copy
+
+```
+Droplet → git push → GitHub → pull → Working Copy
+```
+
+1. After building/testing apps on Droplet:
+
+```bash
+git add .
+git commit -m "Your message"
+git push
+```
+
+1. Open Working Copy on iPad → tap **Pull**
