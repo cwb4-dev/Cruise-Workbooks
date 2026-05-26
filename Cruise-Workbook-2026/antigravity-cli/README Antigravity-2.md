@@ -12,14 +12,14 @@
 |----------------|------------------------------|------------------------------------|
 |AI CLI          |Claude Code                   |Antigravity CLI                     |
 |Model           |Claude Sonnet                 |Gemini 3.5 Flash                    |
-|Auth            |Anthropic API key             |Google account (SSH-aware sign-in)  |
-|Free tier       |No (Pro/Max required)         |Yes — usage limits apply            |
+|Auth            |Anthropic API key             |Google AI Pro — SSH-aware sign-in   |
+|Plan            |Pro/Max (paid)                |Google AI Pro ($20/mo)              |
 |Node.js required|No                            |**No** — Antigravity CLI is Go-based|
 |Droplet IP      |147.182.190.94                |*(new Droplet)*                     |
 |GitHub repo     |cwb4-dev/at-sea-ipad-workbooks|Same repo, separate branch          |
 
 
-> **Note:** Gemini CLI was sunset on **June 18, 2026** for free and individual Google AI accounts. This README uses **Antigravity CLI** (`agy`) — Google’s official replacement, announced at Google I/O on May 19, 2026. The binary is built in Go, no Node.js required.
+> **Note:** Gemini CLI was sunset on **June 18, 2026** for individual Google AI accounts including Google AI Pro and Ultra. This README uses **Antigravity CLI** (`agy`) — Google’s official replacement, announced at Google I/O on May 19, 2026. The binary is built in Go, no Node.js required. Your Google AI Pro plan carries over — auth with `agy auth login --no-browser` and your paid tier activates automatically.
 
 -----
 
