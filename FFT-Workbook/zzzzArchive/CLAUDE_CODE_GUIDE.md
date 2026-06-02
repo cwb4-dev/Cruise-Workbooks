@@ -134,26 +134,6 @@ Create code that:
 
 ## USE CASES 1-8
 
-### Apps You'll Create
-
-| # | App Name | What You'll Build | Output | Skills | Time |
-|---|----------|------------------|--------|--------|------|
-| 1 | **Sine Wave Analyzer** | Visualize sine waves and their frequency | Plots showing time & frequency domain | FFT basics, matplotlib | 15 min |
-| 2 | **Music Note Detector** | Identify which musical notes are playing | Frequency spectrum with note labels | Audio analysis, music theory | 20 min |
-| 3 | **Noise Filter** | Clean noisy signals automatically | Before/after plots showing noise removal | Signal filtering, inverse FFT | 25 min |
-| 4 | **Image Blur Tool** | Blur images using frequency domain | Original & blurred images side-by-side | 2D FFT, image processing | 20 min |
-| 5 | **Cycle Detector** | Find hidden patterns in time series data | Spectrum revealing periodic cycles | Time series analysis, pattern detection | 25 min |
-| 6 | **Spectrogram Visualizer** | Show frequencies changing over time | Animated heatmap of frequency evolution | STFT, time-frequency analysis | 20 min |
-| 7 | **Pitch/Tuner** | Detect musical pitch in audio | Frequency peaks labeled with note names | Peak detection, music tuning | 30 min |
-| 8 | **Data Compressor** | Reduce data size while keeping quality | Original vs compressed signal + metrics | FFT compression, lossy compression | 30 min |
-
-**Total learning time:** 2-3 hours for all 8 use cases  
-**Total coding time:** 1-2 weeks with challenges and experiments
-
----
-
-## USE CASES 1-8
-
 ### USE CASE 1: Simple Sine Wave (Foundation)
 
 **Concept:** Create a sine wave, compute its FFT, see frequency in frequency domain
