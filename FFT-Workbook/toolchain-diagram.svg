@@ -1,205 +1,228 @@
-<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="1200" height="800" fill="#f8f9fa"/>
+  <rect width="1400" height="900" fill="#f8f9fa"/>
   
   <!-- Title -->
-  <text x="600" y="30" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
-    Claude Code on DigitalOcean: Complete Toolchain
+  <text x="700" y="30" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Claude Code on DigitalOcean: Complete Toolchain (Warp + mosh)
   </text>
   
-  <!-- Mac Section -->
+  <!-- Mac Section with Warp -->
   <g id="mac">
     <!-- Box -->
-    <rect x="50" y="80" width="220" height="280" rx="8" fill="#ffffff" stroke="#666" stroke-width="2"/>
+    <rect x="50" y="80" width="280" height="300" rx="8" fill="#ffffff" stroke="#0066cc" stroke-width="2"/>
     
     <!-- Icon/Label -->
-    <text x="160" y="110" font-size="20" font-weight="bold" text-anchor="middle" fill="#000">🖥️ Mac (Local)</text>
+    <text x="190" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#0066cc">🖥️ Warp Terminal</text>
+    <text x="190" y="130" font-size="11" text-anchor="middle" fill="#666">(Modern Mac Terminal)</text>
     
     <!-- Items -->
-    <text x="70" y="150" font-size="12" fill="#333">• Terminal</text>
-    <text x="70" y="175" font-size="12" fill="#333">• SSH Client</text>
-    <text x="70" y="200" font-size="12" fill="#333">• FFT Workbook</text>
-    <text x="70" y="225" font-size="12" fill="#333">• Python Projects</text>
-    <text x="70" y="250" font-size="12" fill="#333">• Code Editor</text>
-    <text x="70" y="275" font-size="12" fill="#333">• Git</text>
-    <text x="70" y="300" font-size="12" fill="#333">• Text Files</text>
+    <text x="70" y="160" font-size="12" fill="#333">• Warp Terminal</text>
+    <text x="70" y="180" font-size="12" fill="#333">• SSH Client</text>
+    <text x="70" y="200" font-size="12" fill="#333">• mosh Client</text>
+    <text x="70" y="220" font-size="12" fill="#333">• Git</text>
+    <text x="70" y="240" font-size="12" fill="#333">• SSH Config</text>
+    <text x="70" y="260" font-size="12" fill="#333">• Command Palette</text>
+    <text x="70" y="280" font-size="12" fill="#333">• AI Suggestions</text>
+    <text x="70" y="310" font-size="12" fill="#333">• SSH Profiles</text>
     
-    <!-- Command -->
-    <text x="160" y="330" font-size="11" text-anchor="middle" fill="#0066cc" font-family="monospace">
-      ssh claude-do
+    <!-- Commands -->
+    <text x="190" y="340" font-size="10" text-anchor="middle" fill="#0066cc" font-family="monospace">
+      ssh claude-do OR mosh claude-do
     </text>
   </g>
   
-  <!-- Arrow 1: SSH Connection -->
-  <g id="arrow1">
+  <!-- Arrow 1a: SSH Connection -->
+  <g id="arrow1a">
     <defs>
       <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
         <polygon points="0 0, 10 3, 0 6" fill="#ff6b35"/>
       </marker>
+      <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#9c27b0"/>
+      </marker>
     </defs>
-    <line x1="270" y1="220" x2="390" y2="220" stroke="#ff6b35" stroke-width="3" marker-end="url(#arrowhead)"/>
-    <text x="330" y="205" font-size="12" fill="#ff6b35" font-weight="bold" text-anchor="middle">SSH</text>
-    <text x="330" y="240" font-size="11" fill="#ff6b35" text-anchor="middle">Port 22</text>
+    <line x1="330" y1="200" x2="420" y2="200" stroke="#ff6b35" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="375" y="185" font-size="12" fill="#ff6b35" font-weight="bold" text-anchor="middle">SSH</text>
+    <text x="375" y="220" font-size="10" fill="#ff6b35" text-anchor="middle">(Port 22)</text>
+  </g>
+  
+  <!-- Arrow 1b: mosh Connection -->
+  <g id="arrow1b">
+    <line x1="330" y1="240" x2="420" y2="240" stroke="#9c27b0" stroke-width="3" marker-end="url(#arrowhead2)"/>
+    <text x="375" y="225" font-size="12" fill="#9c27b0" font-weight="bold" text-anchor="middle">mosh</text>
+    <text x="375" y="260" font-size="10" fill="#9c27b0" text-anchor="middle">(UDP 60000-61000)</text>
   </g>
   
   <!-- DigitalOcean Droplet Section -->
   <g id="digitalocean">
     <!-- Outer box -->
-    <rect x="390" y="80" width="420" height="280" rx="8" fill="#0080ff" fill-opacity="0.1" stroke="#0080ff" stroke-width="2"/>
+    <rect x="420" y="80" width="520" height="300" rx="8" fill="#0080ff" fill-opacity="0.1" stroke="#0080ff" stroke-width="2"/>
     
     <!-- Title -->
-    <text x="600" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#0066cc">
+    <text x="680" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#0066cc">
       ☁️ DigitalOcean Droplet ($5/month)
     </text>
     
-    <!-- Inside boxes -->
-    <!-- Ubuntu -->
-    <rect x="410" y="130" width="180" height="120" rx="6" fill="#ffffff" stroke="#0066cc" stroke-width="1"/>
-    <text x="500" y="155" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">Ubuntu 24.04</text>
-    <text x="430" y="180" font-size="11" fill="#555">• Node.js</text>
-    <text x="430" y="200" font-size="11" fill="#555">• Python 3</text>
-    <text x="430" y="220" font-size="11" fill="#555">• pip packages</text>
-    <text x="430" y="240" font-size="11" fill="#555">• Git</text>
+    <!-- Path A: mosh-only -->
+    <rect x="440" y="130" width="220" height="140" rx="6" fill="#fff3cd" stroke="#ff9800" stroke-width="2"/>
+    <text x="550" y="155" font-size="13" font-weight="bold" text-anchor="middle" fill="#ff9800">Option A: mosh Only</text>
+    <text x="450" y="180" font-size="11" fill="#555">✅ Simpler</text>
+    <text x="450" y="200" font-size="11" fill="#555">✅ Network resilient</text>
+    <text x="450" y="220" font-size="11" fill="#555">✅ Code runs 24/7</text>
+    <text x="450" y="240" font-size="11" fill="#555">• No tmux needed</text>
+    <text x="450" y="260" font-size="10" fill="#888" font-style="italic">For learning</text>
     
-    <!-- Claude Code -->
-    <rect x="610" y="130" width="180" height="120" rx="6" fill="#ffffff" stroke="#0066cc" stroke-width="1"/>
-    <text x="700" y="155" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">Claude Code</text>
-    <text x="630" y="180" font-size="11" fill="#555">• claude-code CLI</text>
-    <text x="630" y="200" font-size="11" fill="#555">• Node.js runtime</text>
-    <text x="630" y="220" font-size="11" fill="#555">• Python execution</text>
-    <text x="630" y="240" font-size="11" fill="#555">• File I/O</text>
+    <!-- Path B: mosh + tmux -->
+    <rect x="680" y="130" width="240" height="140" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="800" y="155" font-size="13" font-weight="bold" text-anchor="middle" fill="#388e3c">Option B: mosh + tmux</text>
+    <text x="690" y="180" font-size="11" fill="#555">✅ Multiple projects</text>
+    <text x="690" y="200" font-size="11" fill="#555">✅ Network resilient</text>
+    <text x="690" y="220" font-size="11" fill="#555">✅ Professional setup</text>
+    <text x="690" y="240" font-size="11" fill="#555">• Terminal multiplexer</text>
+    <text x="690" y="260" font-size="10" fill="#888" font-style="italic">For production</text>
     
-    <!-- tmux -->
-    <rect x="410" y="270" width="380" height="80" rx="6" fill="#fff3cd" stroke="#ff9800" stroke-width="1"/>
-    <text x="600" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">tmux (Session Manager)</text>
-    <text x="430" y="320" font-size="11" fill="#555">Keeps Claude Code running 24/7 • Detach/Reattach • Multiple projects</text>
+    <!-- Claude Code & Services -->
+    <rect x="440" y="290" width="480" height="70" rx="6" fill="#ffffff" stroke="#0066cc" stroke-width="1"/>
+    <text x="680" y="310" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">Shared: Claude Code + Node.js + Python</text>
+    <text x="680" y="335" font-size="11" fill="#666">Runs your projects 24/7 • Full CLI access • Any package</text>
   </g>
   
   <!-- Arrow 2: Upload Files -->
   <g id="arrow2">
-    <line x1="270" y1="280" x2="390" y2="280" stroke="#4caf50" stroke-width="3" marker-end="url(#arrowhead2)"/>
     <defs>
-      <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
         <polygon points="0 0, 10 3, 0 6" fill="#4caf50"/>
       </marker>
     </defs>
-    <text x="330" y="265" font-size="12" fill="#4caf50" font-weight="bold" text-anchor="middle">scp / git</text>
-    <text x="330" y="305" font-size="11" fill="#4caf50" text-anchor="middle">Workbook, Projects</text>
+    <line x1="330" y1="310" x2="420" y2="310" stroke="#4caf50" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+    <text x="375" y="295" font-size="12" fill="#4caf50" font-weight="bold" text-anchor="middle">git / scp</text>
   </g>
   
-  <!-- Arrow 3: Back to Mac -->
+  <!-- Arrow 3: Reconnect paths -->
   <g id="arrow3">
-    <defs>
-      <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-        <polygon points="0 0, 10 3, 0 6" fill="#9c27b0"/>
-      </marker>
-    </defs>
-    <line x1="390" y1="160" x2="270" y2="160" stroke="#9c27b0" stroke-width="3" marker-end="url(#arrowhead3)"/>
-    <text x="330" y="140" font-size="12" fill="#9c27b0" font-weight="bold" text-anchor="middle">tmux attach</text>
-    <text x="330" y="185" font-size="11" fill="#9c27b0" text-anchor="middle">View Results</text>
+    <line x1="940" y1="200" x2="1000" y2="200" stroke="#0066cc" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="970" y="185" font-size="10" fill="#0066cc" text-anchor="middle">Reconnect</text>
   </g>
   
   <!-- Files/Projects Section -->
   <g id="files">
-    <rect x="850" y="80" width="320" height="280" rx="8" fill="#f0f0f0" stroke="#999" stroke-width="2"/>
+    <rect x="980" y="80" width="380" height="300" rx="8" fill="#f0f0f0" stroke="#999" stroke-width="2"/>
     
-    <text x="1010" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">📁 Projects & Files</text>
+    <text x="1170" y="110" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">📁 Your Projects on Server</text>
     
     <!-- FFT Workbook -->
-    <rect x="870" y="130" width="280" height="50" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
-    <text x="1010" y="150" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">FFT_Learning_Workbook.md</text>
-    <text x="880" y="170" font-size="10" fill="#666">8 use cases + starter code</text>
+    <rect x="1000" y="130" width="340" height="45" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+    <text x="1170" y="150" font-size="12" font-weight="bold" text-anchor="middle" fill="#1976d2">FFT Learning Workbook</text>
+    <text x="1010" y="167" font-size="10" fill="#666">8 use cases, keep running on server</text>
     
-    <!-- README -->
-    <rect x="870" y="190" width="280" height="50" rx="4" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
-    <text x="1010" y="210" font-size="12" font-weight="bold" text-anchor="middle" fill="#7b1fa2">README.md</text>
-    <text x="880" y="230" font-size="10" fill="#666">GitHub documentation</text>
+    <!-- Use Cases -->
+    <rect x="1000" y="185" width="340" height="45" rx="4" fill="#fff3cd" stroke="#ff9800" stroke-width="1"/>
+    <text x="1170" y="205" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">Use Cases 1-8</text>
+    <text x="1010" y="222" font-size="10" fill="#666">Sine, Audio, Filter, Image, Patterns, etc.</text>
     
-    <!-- Your Projects -->
-    <rect x="870" y="250" width="280" height="50" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
-    <text x="1010" y="270" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">Your Python/Node Projects</text>
-    <text x="880" y="290" font-size="10" fill="#666">Run with Claude Code</text>
+    <!-- Custom Projects -->
+    <rect x="1000" y="240" width="340" height="45" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
+    <text x="1170" y="260" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">Your Custom Projects</text>
+    <text x="1010" y="277" font-size="10" fill="#666">Any Python or Node.js project</text>
+    
+    <!-- Always running -->
+    <rect x="1000" y="295" width="340" height="60" rx="4" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+    <text x="1170" y="318" font-size="12" font-weight="bold" text-anchor="middle" fill="#d32f2f">🚀 Running 24/7</text>
+    <text x="1010" y="340" font-size="10" fill="#666">Kept alive by mosh/tmux</text>
   </g>
   
   <!-- Bottom Workflow Section -->
   <g id="workflow">
-    <rect x="50" y="400" width="1120" height="350" rx="8" fill="#ffffff" stroke="#333" stroke-width="2"/>
+    <rect x="50" y="420" width="1310" height="440" rx="8" fill="#ffffff" stroke="#333" stroke-width="2"/>
     
-    <text x="610" y="430" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">📋 Daily Workflow</text>
+    <text x="705" y="450" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">📋 Daily Workflow (Choose Your Path)</text>
     
-    <!-- Step 1 -->
-    <g id="step1">
-      <rect x="70" y="460" width="220" height="120" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
-      <text x="180" y="485" font-size="13" font-weight="bold" text-anchor="middle" fill="#1976d2">1. Connect</text>
-      <text x="85" y="510" font-size="11" font-family="monospace" fill="#333">$ ssh claude-do</text>
-      <text x="85" y="535" font-size="11" fill="#666">Open Terminal on Mac,</text>
-      <text x="85" y="555" font-size="11" fill="#666">SSH into your droplet</text>
+    <!-- PATH A: mosh Only (Simpler) -->
+    <g id="pathA">
+      <text x="320" y="480" font-size="14" font-weight="bold" text-anchor="middle" fill="#ff9800">🟠 PATH A: mosh Only (Simpler)</text>
+      
+      <!-- Step A1 -->
+      <rect x="70" y="500" width="180" height="110" rx="6" fill="#fff3cd" stroke="#ff9800" stroke-width="2"/>
+      <text x="160" y="520" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">1. Connect</text>
+      <text x="80" y="540" font-size="10" font-family="monospace" fill="#333">$ mosh claude-do</text>
+      <text x="80" y="560" font-size="10" fill="#666">Auto-reconnects if</text>
+      <text x="80" y="575" font-size="10" fill="#666">network changes</text>
+      
+      <!-- Arrow A -->
+      <line x1="250" y1="555" x2="290" y2="555" stroke="#ff9800" stroke-width="2"/>
+      
+      <!-- Step A2 -->
+      <rect x="290" y="500" width="180" height="110" rx="6" fill="#fff3cd" stroke="#ff9800" stroke-width="2"/>
+      <text x="380" y="520" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">2. Code</text>
+      <text x="300" y="540" font-size="10" font-family="monospace" fill="#333">$ claude-code file.py</text>
+      <text x="300" y="560" font-size="10" fill="#666">Start your project</text>
+      <text x="300" y="575" font-size="10" fill="#666">(keeps running!)</text>
+      
+      <!-- Arrow A -->
+      <line x1="470" y1="555" x2="510" y2="555" stroke="#ff9800" stroke-width="2"/>
+      
+      <!-- Step A3 -->
+      <rect x="510" y="500" width="180" height="110" rx="6" fill="#fff3cd" stroke="#ff9800" stroke-width="2"/>
+      <text x="600" y="520" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9800">3. Close Warp</text>
+      <text x="520" y="540" font-size="10" font-family="monospace" fill="#333">$ exit or Cmd+W</text>
+      <text x="520" y="560" font-size="10" fill="#666">Code keeps running</text>
+      <text x="520" y="575" font-size="10" fill="#666">on server!</text>
     </g>
     
-    <!-- Arrow -->
-    <line x1="290" y1="520" x2="320" y2="520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-    
-    <!-- Step 2 -->
-    <g id="step2">
-      <rect x="330" y="460" width="220" height="120" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
-      <text x="440" y="485" font-size="13" font-weight="bold" text-anchor="middle" fill="#7b1fa2">2. Attach Session</text>
-      <text x="345" y="510" font-size="11" font-family="monospace" fill="#333">$ tmux attach -t claude</text>
-      <text x="345" y="535" font-size="11" fill="#666">Attach to existing</text>
-      <text x="345" y="555" font-size="11" fill="#666">tmux session</text>
+    <!-- PATH B: mosh + tmux (More Power) -->
+    <g id="pathB">
+      <text x="1090" y="480" font-size="14" font-weight="bold" text-anchor="middle" fill="#388e3c">🟢 PATH B: mosh + tmux (Pro)</text>
+      
+      <!-- Step B1 -->
+      <rect x="910" y="500" width="180" height="110" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+      <text x="1000" y="520" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">1. Connect</text>
+      <text x="920" y="540" font-size="10" font-family="monospace" fill="#333">$ mosh claude-do</text>
+      <text x="920" y="560" font-size="10" fill="#666">Network resilient</text>
+      <text x="920" y="575" font-size="10" fill="#666">connection</text>
+      
+      <!-- Arrow B -->
+      <line x1="1090" y1="555" x2="1130" y2="555" stroke="#388e3c" stroke-width="2"/>
+      
+      <!-- Step B2 -->
+      <rect x="1130" y="500" width="180" height="110" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+      <text x="1220" y="520" font-size="12" font-weight="bold" text-anchor="middle" fill="#388e3c">2. Use tmux</text>
+      <text x="1140" y="540" font-size="10" font-family="monospace" fill="#333">$ tmux new -s proj</text>
+      <text x="1140" y="560" font-size="10" fill="#666">Multiple projects</text>
+      <text x="1140" y="575" font-size="10" fill="#666">at once</text>
     </g>
     
-    <!-- Arrow -->
-    <line x1="550" y1="520" x2="580" y2="520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-    
-    <!-- Step 3 -->
-    <g id="step3">
-      <rect x="590" y="460" width="220" height="120" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
-      <text x="700" y="485" font-size="13" font-weight="bold" text-anchor="middle" fill="#388e3c">3. Run Claude Code</text>
-      <text x="605" y="510" font-size="11" font-family="monospace" fill="#333">$ claude-code file.py</text>
-      <text x="605" y="535" font-size="11" fill="#666">Run your project with</text>
-      <text x="605" y="555" font-size="11" fill="#666">Claude Code</text>
-    </g>
-    
-    <!-- Arrow -->
-    <line x1="810" y1="520" x2="840" y2="520" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-    
-    <!-- Step 4 -->
-    <g id="step4">
-      <rect x="850" y="460" width="220" height="120" rx="6" fill="#fff3cd" stroke="#ff9800" stroke-width="2"/>
-      <text x="960" y="485" font-size="13" font-weight="bold" text-anchor="middle" fill="#ff9800">4. Detach & Leave</text>
-      <text x="865" y="510" font-size="11" font-family="monospace" fill="#333">Ctrl+B, then D</text>
-      <text x="865" y="535" font-size="11" fill="#666">Code keeps running!</text>
-      <text x="865" y="555" font-size="11" fill="#666">24/7 on droplet</text>
-    </g>
+    <!-- Separator -->
+    <line x1="700" y1="630" x2="700" y2="800" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
     
     <!-- Features Row -->
     <g id="features">
-      <text x="70" y="610" font-size="14" font-weight="bold" fill="#333">✅ Key Features:</text>
+      <text x="70" y="655" font-size="13" font-weight="bold" fill="#333">✅ Both Paths Feature:</text>
       
-      <rect x="70" y="625" width="260" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
-      <text x="85" y="650" font-size="12" fill="#333">🔄 Always-On Development</text>
-      <text x="85" y="670" font-size="12" fill="#333">Session persists even when</text>
-      <text x="85" y="690" font-size="12" fill="#333">you disconnect</text>
+      <rect x="70" y="670" width="310" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+      <text x="85" y="690" font-size="11" fill="#333">⚡ Network Resilient</text>
+      <text x="85" y="708" font-size="11" fill="#333">Survives WiFi/LTE switches</text>
+      <text x="85" y="725" font-size="11" fill="#333">Reconnects automatically</text>
       
-      <rect x="350" y="625" width="260" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
-      <text x="365" y="650" font-size="12" fill="#333">🌍 Access Anywhere</text>
-      <text x="365" y="670" font-size="12" fill="#333">SSH from any Mac, iPad,</text>
-      <text x="365" y="690" font-size="12" fill="#333">or computer</text>
+      <rect x="400" y="670" width="310" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+      <text x="415" y="690" font-size="11" fill="#333">🚀 24/7 Runtime</text>
+      <text x="415" y="708" font-size="11" fill="#333">Code keeps running on server</text>
+      <text x="415" y="725" font-size="11" fill="#333">Close Warp anytime</text>
       
-      <rect x="630" y="625" width="260" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
-      <text x="645" y="650" font-size="12" fill="#333">💰 Affordable</text>
-      <text x="645" y="670" font-size="12" fill="#333">$5/month = 17¢/day for</text>
-      <text x="645" y="690" font-size="12" fill="#333">full Linux environment</text>
+      <rect x="730" y="670" width="310" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+      <text x="745" y="690" font-size="11" fill="#333">💰 Affordable</text>
+      <text x="745" y="708" font-size="11" fill="#333">$5/month = 17¢/day</text>
+      <text x="745" y="725" font-size="11" fill="#333">Full Linux VM included</text>
       
-      <rect x="910" y="625" width="260" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
-      <text x="925" y="650" font-size="12" fill="#333">🚀 Unlimited Projects</text>
-      <text x="925" y="670" font-size="12" fill="#333">Run multiple tmux sessions</text>
-      <text x="925" y="690" font-size="12" fill="#333">for different projects</text>
+      <rect x="1060" y="670" width="290" height="80" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+      <text x="1075" y="690" font-size="11" fill="#333">✨ Blink-Like Experience</text>
+      <text x="1075" y="708" font-size="11" fill="#333">From any Mac + Warp</text>
+      <text x="1075" y="725" font-size="11" fill="#333">Better than Blink!</text>
     </g>
   </g>
   
   <!-- Footer -->
-  <text x="610" y="780" font-size="12" text-anchor="middle" fill="#666">
-    Like Blink SSH on iPad, but with Claude Code running on a Linux droplet 24/7
+  <text x="705" y="860" font-size="13" text-anchor="middle" fill="#666" font-weight="bold">
+    Warp + mosh on DigitalOcean = Blink iPad experience on Mac with Claude Code 🚀
   </text>
 </svg>
