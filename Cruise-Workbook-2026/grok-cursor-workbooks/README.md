@@ -7,7 +7,7 @@
 ## 📋 Project Overview
 
 A collection of fun, educational Python apps for cruise ship passengers and crew. 
-The project demonstrates vibe coding workflows on **iPad** and **Mac**, both using the same **DigitalOcean Ubuntu Droplet** as the backend.
+The project demonstrates vibe coding workflows on **iPad** using Grok Work and **Mac** using Cursor, both using the same **DigitalOcean Ubuntu Droplet** as the backend.
 
 ## 📁 Files in This Repo
 
