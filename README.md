@@ -1,6 +1,6 @@
 # 🚢 Cruise Workbooks
 
-[![Python](https://img.shields.io/badge/Python-100%25-blue?logo=python&logoColor=white)](link-to-your-repo)
+[![Python](https://img.shields.io/badge/Python-100%25-blue?logo=python&logoColor=white)](https://github.com/cwb4-dev/Cruise-Workbooks)
 
 A comprehensive collection of personal workbooks, experiments, and learning projects spanning various domains in data science, algorithms, and productivity.
 
@@ -10,62 +10,78 @@ A comprehensive collection of personal workbooks, experiments, and learning proj
 
 ## 📂 Repository Structure
 
-This monorepo contains several focused projects:
+This monorepo contains several focused projects, each exploring a different domain:
+
+---
 
 ### 🤖 AI-Learning-Workbooks
-Workbooks dedicated to learning and exploring artificial intelligence concepts, with updates from Claude and an archive section.
+A growing collection of workbooks for learning artificial intelligence and machine learning concepts.  
+**Includes:** Hands-on experiments, prompt engineering examples, and explorations of various AI models.  
+**Latest update:** Claude integration and archived older experiments for reference.
+
+---
 
 ### 🛒 Costco_Price_Auditor
-A project for auditing and tracking prices, with maintained files and a Claude code playbook.
+A practical tool for tracking and auditing prices at Costco.  
+**Purpose:** Helps monitor price changes over time, identify trends, and make smarter purchasing decisions.  
+**Includes:** Price tracking scripts, data logging, and a Claude-based code playbook for automation ideas.
+
+---
 
 ### 🗓️ Cruise-Workbook-2026
-A workbook specifically for planning or documenting a 2026 cruise, with a corrected README.
+A planning and documentation workbook for a 2026 cruise adventure.  
+**Contents:** Itinerary planning, packing lists, port research, and travel tips.  
+**Status:** Active planning with regular updates as the trip approaches.
+
+---
 
 ### 📊 FFT-Workbook
-Workbooks and experiments related to Fast Fourier Transforms and signal processing.
+Workbooks and experiments focused on Fast Fourier Transforms (FFT) and signal processing.  
+**Topics covered:** Frequency analysis, noise filtering, and practical applications of FFT in data processing.  
+**Goal:** Build intuition and hands-on skills for working with signals and time-series data.
+
+---
 
 ### 🧠 Game Theory (deepseek-based)
-An Obsidian-based workbook exploring game theory, with a specific section on Game Theory and Markov Chain Monte Carlo (MCS) intersections.
+An Obsidian-based workbook exploring game theory concepts and strategic decision-making.  
+**Key focus:** Intersection of game theory and Markov Chain Monte Carlo (MCS) methods.  
+**Includes:** Interactive notes, strategy analyses, and examples from economics and behavioral science.
+
+---
 
 ### 🎲 Monte_Carlo_Simulation
-Workbooks and simulations focused on Monte Carlo methods, including an Obsidian version and Microsoft README.
+A comprehensive exploration of Monte Carlo methods for simulation and probabilistic modeling.  
+**Includes:**
+- Python notebooks with simulation code
+- **Monte Carlo Methods Decoded (article)** – An in-depth, accessible article explaining the core concepts, history, and real-world applications of Monte Carlo methods
+- Examples in finance, physics, and decision-making under uncertainty
+
+---
 
 ### 🥧 pi-mono
-A project related to calculating or exploring Pi.
+A focused project dedicated to calculating and exploring the mathematical constant Pi (π).  
+**Approach:** Various computational methods for approximating Pi, including Monte Carlo estimation, series expansions, and numerical algorithms.  
+**Goal:** Demonstrate different numerical techniques and their accuracy.
+
+---
 
 ### 🗄️ zzzzzArchive
-An archive for older files and previous versions (v4).
+A storage area for older files, legacy code, and past project versions.  
+**Purpose:** Keeps the main workspace clean while preserving historical work for reference.  
+**Contains:** Archived notebooks, scripts, and experimental code from earlier iterations.
+
+---
 
 ### ⚙️ Utility Files
-- `.gitattributes` & `.gitignore`: Standard Git configuration files.
-- `00 - Ipad + Logitech Keyboard tricks.md`: A note on productivity tips for using an iPad with a Logitech keyboard.
+- **`.gitattributes`** & **`.gitignore`**: Standard Git configuration for repository management.
+- **`00 - Ipad + Logitech Keyboard tricks.md`**: A personal productivity guide with tips and shortcuts for using an iPad with a Logitech keyboard effectively.
 
 ---
 
 ## 🚀 Getting Started
 
-Since this is a collection of independent workbooks, each sub-folder typically contains its own specific instructions or code. To explore a particular project:
+Each sub-folder is designed to be self-contained. To dive into a specific project:
 
-1.  Navigate into the folder of interest.
-2.  Look for a `README.md` or guide within that sub-folder for detailed setup and usage.
-
-### Prerequisites
-- **Python 3.x**: The primary language used across the repository (as per GitHub's language stats).
-- Dependencies vary by project; check individual project folders for `requirements.txt` or similar files.
-
----
-
-## 👥 Contributing
-
-This is a personal project repository, but if you have suggestions or find issues, feel free to open an issue or pull request.
-
----
-
-## 📜 License
-
-This project is open source. Please check the individual project folders or contact the repository owner for specific licensing details.
-
----
-
-**Repository Owner:** [cwb4-dev](https://github.com/cwb4-dev)
-**Last Updated:** July 9, 2026
+1.  Navigate to the folder of interest:
+    ```bash
+    cd [Project-Folder-Name]
