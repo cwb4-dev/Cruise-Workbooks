@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monte_Carlo_Simulation/Readme.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Readme"
+              "title": "README"
             }
           }
         ]
@@ -183,14 +183,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "66444c983f542f23",
+  "active": "d32eda688f8865e1",
   "lastOpenFiles": [
+    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/README.md",
+    "Monte_Carlo_Simulation/Readme.md",
+    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/Jupyter Notebook Examples.md",
+    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/Article Overview.md",
+    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (Article).md",
+    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)",
+    "Monte_Carlo_Simulation/Untitled.md",
     "README.md",
     "00 - Ipad + Logitech Keyboard tricks.md",
     "00 Ipad + Logitech Keyboard tricks.md",
     "Ipad + Logitech Keyboard tricks.md",
     "Monte_Carlo_Simulation/Monte Carlo Simulation -- deepseek workbook.md",
-    "Monte_Carlo_Simulation/Readme.md",
     "FFT-Workbook/SETUP.md",
     "FFT-Workbook/README.md",
     "Costco_Price_Auditor/Claude_vs_Gemini.md"
