@@ -1,8 +1,8 @@
 
 # Game Theory: The Key Things You Need to Know
 
-A plain-English guide to understanding strategic decision-making without the math
-Other files in this repo shwo how to setup code exampel in either jupyter or DOCN droplet
+1) A plain-English guide to understanding strategic decision-making without the math
+2) Other files in this repo shwo how to setup code exampel in either jupyter or DOCN droplet
 
 ---
 
