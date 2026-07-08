@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FFT-Workbook/SETUP.md",
+                "file": "Monte_Carlo_Simulation/Readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SETUP"
+              "title": "Readme"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FFT-Workbook/SETUP.md",
+                "file": "Monte_Carlo_Simulation/Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for SETUP"
+              "title": "Backlinks for Readme"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FFT-Workbook/SETUP.md",
+                "file": "Monte_Carlo_Simulation/Readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SETUP"
+              "title": "Outgoing links from Readme"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FFT-Workbook/SETUP.md",
+                "file": "Monte_Carlo_Simulation/Readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SETUP"
+              "title": "Outline of Readme"
             }
           }
         ]
@@ -183,8 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "d32eda688f8865e1",
+  "active": "66444c983f542f23",
   "lastOpenFiles": [
+    "Monte_Carlo_Simulation/Monte Carlo Simulation -- deepseek workbook.md",
+    "Monte_Carlo_Simulation/Readme.md",
+    "FFT-Workbook/SETUP.md",
     "FFT-Workbook/README.md",
     "Costco_Price_Auditor/Claude_vs_Gemini.md"
   ]
