@@ -2,13 +2,9 @@
 
 A comprehensive collection of personal workbooks, experiments, and learning projects spanning various domains in data science, algorithms, and productivity.
 
-**Mostly all deepseek-based**
 
-[![Repository Size](https://img.shields.io/github/repo-size/cwb4-dev/Cruise-Workbooks)](https://github.com/cwb4-dev/Cruise-Workbooks)
-[![Last Commit](https://img.shields.io/github/last-commit/cwb4-dev/Cruise-Workbooks)](https://github.com/cwb4-dev/Cruise-Workbooks/commits/main)
-[![Languages](https://img.shields.io/github/languages/top/cwb4-dev/Cruise-Workbooks)](https://github.com/cwb4-dev/Cruise-Workbooks)
-[![Stars](https://img.shields.io/github/stars/cwb4-dev/Cruise-Workbooks)](https://github.com/cwb4-dev/Cruise-Workbooks/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Mostly all deepseek-based + now featuring Hugging Face 🤗**
 
 ---
 
@@ -35,6 +31,7 @@ Welcome to my personal "Cruise" workbooks — a curated collection of experiment
 | **Cruise-Workbook-2026** | Itinerary planning and documentation for a 2026 cruise adventure | 🟢 Active |
 | **FFT-Workbook** | Fast Fourier Transform experiments and signal processing | 🟢 Active |
 | **Game Theory** | Obsidian-based workbook exploring strategic decision-making | 🟢 Active |
+| **Hugging_Face** | Complete hobbyist workbook for Hugging Face projects (Easy → Hard) | 🟢 Active |
 | **Monte_Carlo_Simulation** | Comprehensive Monte Carlo methods with Python notebooks | 🟢 Active |
 | **pi-mono** | Pi (π) calculation using various computational methods | 🟢 Active |
 | **zzzzArchive** | Archived legacy code and older project versions | 📦 Archived |
@@ -49,7 +46,6 @@ A deep dive into Monte Carlo methods for simulation and probabilistic modeling:
 - Python notebooks with simulation code
 - Real-world examples in finance, physics, and decision-making
 - Interactive visualizations of convergence and uncertainty
-- [Read the Article: Monte Carlo Methods Decoded](./Monte_Carlo_Simulation/Monte%20Carlo%20Methods%20Decoded.md)
 
 ### 🧠 Game Theory
 Exploring strategic decision-making with a focus on:
@@ -88,11 +84,19 @@ Travel planning and documentation:
 - Comprehensive packing lists
 - Travel tips and logistics
 
+### 🤗 Hugging Face Workbook
+Complete hands-on guide for building AI apps with Hugging Face:
+- 3 Progressive Projects: Easy (Sentiment Analyzer) → Medium (Podcast Summarizer) → Hard (Custom Fine-tuned Chatbot)
+- Built-in testing with `pytest` for each project
+- Step-by-step setup and Google Colab support
+- Covers pipelines, Gradio, audio processing, and LoRA fine-tuning
+
 ---
 
 ## 🔧 Prerequisites & Setup
 
 ### Required Tools
+
 ```bash
 # Clone the repository
 git clone https://github.com/cwb4-dev/Cruise-Workbooks.git
@@ -102,12 +106,14 @@ cd Cruise-Workbooks
 ```
 
 ### Common Dependencies
+
 - Python 3.8+
 - Jupyter Notebook / JupyterLab
 - NumPy, Pandas, Matplotlib, Seaborn
 - Additional libraries per project
 
 ### Quick Start
+
 ```bash
 # For Monte Carlo Simulation
 cd Monte_Carlo_Simulation
@@ -117,6 +123,10 @@ jupyter notebook
 # For Game Theory
 cd "Game Theory (deepseek-based)"
 # Open Obsidian notes or run Python scripts
+
+# For Hugging Face projects
+cd Hugging_Face
+# Follow the setup instructions in the workbook
 ```
 
 ---
@@ -131,6 +141,7 @@ cd "Game Theory (deepseek-based)"
 | Cruise-Workbook-2026 | 🟢 Active | June 2026 |
 | FFT-Workbook | 🟢 Active | June 2026 |
 | Game Theory | 🟢 Active | July 2026 |
+| Hugging_Face | 🟢 Active | July 2026 |
 | Monte_Carlo_Simulation | 🟢 Active | July 2026 |
 | pi-mono | 🟢 Active | April 2026 |
 | zzzzArchive | 📦 Archived | April 2026 |
@@ -140,59 +151,77 @@ cd "Game Theory (deepseek-based)"
 ## 🛠️ Technology Stack
 
 ### Languages & Frameworks
+
 - **Python** - Primary language for data science and algorithms
 - **Jupyter Notebook** - Interactive development and visualization
 - **Obsidian** - Knowledge management and note-taking
 - **Markdown** - Documentation and notes
 
 ### Python Libraries
+
 - **Data Science**: NumPy, Pandas, SciPy
 - **Visualization**: Matplotlib, Seaborn, Plotly
-- **Machine Learning**: Scikit-learn, TensorFlow/PyTorch (AI workbooks)
+- **Machine Learning**: Scikit-learn, TensorFlow/PyTorch, 🤗 Transformers
 - **Signal Processing**: SciPy, NumPy (FFT workbook)
+- **Audio Processing**: SoundFile, Librosa (Hugging Face projects)
+- **Fine-tuning**: PEFT, BitsAndBytes (Hugging Face hard project)
 
 ### Tools & Platforms
+
 - **GitHub** - Version control and collaboration
 - **Jupyter** - Interactive notebooks
 - **Obsidian** - Knowledge management
 - **Claude AI** - Code playbooks and experiments
+- **Gradio** - Web app interfaces (Hugging Face projects)
+- **Hugging Face Hub** - Model hosting and sharing
 
 ---
 
 ## 🗂️ Repository Navigation
 
 ### For Data Science & Algorithms
-1. Start with [Monte_Carlo_Simulation](./Monte_Carlo_Simulation/) for probabilistic methods
-2. Explore [pi-mono](./pi-mono/) for numerical computation examples
-3. Dive into [FFT-Workbook](./FFT-Workbook/) for signal processing
-4. Study [Game Theory](./Game%20Theory%20(deepseek-based)/) for strategic decision-making
+
+1. Start with `Monte_Carlo_Simulation` for probabilistic methods
+2. Explore `pi-mono` for numerical computation examples
+3. Dive into `FFT-Workbook` for signal processing
+4. Study `Game Theory` for strategic decision-making
+5. Try `Hugging_Face` for modern AI/ML applications
 
 ### For Practical Tools
-1. Try [Costco_Price_Auditor](./Costco_Price_Auditor/) for automation
-2. Explore [AI-Learning-Workbooks](./AI-Learning-Workbooks/) for ML experiments
+
+1. Try `Costco_Price_Auditor` for automation
+2. Explore `AI-Learning-Workbooks` for ML experiments
+3. Build web apps with `Hugging_Face` projects
 
 ### For Personal Planning
-1. Check [Cruise-Workbook-2026](./Cruise-Workbook-2026/) for travel planning
-2. Review productivity tips in [00 - Ipad + Logitech Keyboard tricks.md](./00%20-%20Ipad%20%2B%20Logitech%20Keyboard%20tricks.md)
+
+1. Check `Cruise-Workbook-2026` for travel planning
+2. Review productivity tips in `00 - Ipad + Logitech Keyboard tricks.md`
 
 ---
 
 ## 📈 Learning Path
 
 ### Beginner Path
+
 1. **Monte Carlo Simulation** - Understand probabilistic modeling
 2. **pi-mono** - See Monte Carlo in action
 3. **Bayes Theorem** - Learn Bayesian inference
+4. **Hugging_Face (Easy)** - Build your first AI web app
 
 ### Intermediate Path
+
 1. **FFT Workbook** - Master signal processing
 2. **Game Theory** - Explore strategic decision-making
 3. **AI Learning Workbooks** - Dive into machine learning
+4. **Hugging_Face (Medium)** - Chain AI models for audio summarization
 
 ### Advanced Path
+
 1. **Combine concepts**: Monte Carlo + Game Theory (check the intersection!)
 2. **Build practical tools**: Costco Price Auditor
 3. **Explore AI integration**: Claude-based experiments
+4. **Hugging_Face (Hard)** - Fine-tune your own chatbot with LoRA
 
 ---
 
@@ -209,7 +238,7 @@ This is a personal repository, but suggestions and feedback are welcome!
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
@@ -218,12 +247,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - All open-source libraries and tools that make this work possible
 - The AI and data science community for continuous learning resources
 - Claude AI for code playbook inspirations
+- Hugging Face for their incredible open-source ecosystem
 
 ---
 
 ## 📞 Contact & Support
 
-- **Issues**: [Open an issue](https://github.com/cwb4-dev/Cruise-Workbooks/issues)
+- **Issues**: Open an issue
 - **Discussions**: Use GitHub Discussions for questions
 - **Email**: [Your preferred contact method]
 
@@ -248,15 +278,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📚 Additional Resources
 
 ### Recommended Reading
-- [Monte Carlo Methods Decoded](./Monte_Carlo_Simulation/Monte%20Carlo%20Methods%20Decoded.md)
+
+- Monte Carlo Methods Decoded
 - Game Theory + MCS Intersection (in Game Theory workbook)
 - FFT Applications and Examples (in FFT Workbook)
+- Hugging Face Documentation and Tutorials
 
 ### External Resources
-- [Jupyter Documentation](https://jupyter.org/documentation)
-- [NumPy Documentation](https://numpy.org/doc/stable/)
-- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+
+- Jupyter Documentation
+- NumPy Documentation
+- Matplotlib Documentation
+- Hugging Face Course: [huggingface.co/learn](https://huggingface.co/learn)
 
 ---
 
 *Last Updated: July 2026*
+
