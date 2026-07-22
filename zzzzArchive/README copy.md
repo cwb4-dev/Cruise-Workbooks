@@ -2,8 +2,6 @@
 
 A comprehensive collection of personal workbooks, experiments, and learning projects spanning various domains in data science, algorithms, and productivity.
 
-**Mostly all deepseek-based**
-
 [![Repository Size](https://img.shields.io/github/repo-size/cwb4-dev/Cruise-Workbooks)](https://github.com/cwb4-dev/Cruise-Workbooks)
 [![Last Commit](https://img.shields.io/github/last-commit/cwb4-dev/Cruise-Workbooks)](https://github.com/cwb4-dev/Cruise-Workbooks/commits/main)
 [![Languages](https://img.shields.io/github/languages/top/cwb4-dev/Cruise-Workbooks)](https://github.com/cwb4-dev/Cruise-Workbooks)
