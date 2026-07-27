@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Known Colab Github Picker Issue.md",
+                "file": "Bayes Theorem/Bayes' Theorem Workbook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Known Colab Github Picker Issue"
+              "title": "Bayes' Theorem Workbook"
             }
           }
         ],
@@ -109,8 +109,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Monte_Carlo_Simulation/Readme.md",
-                "collapseAll": false,
+                "file": "Bayes Theorem/Bayes' Theorem Workbook.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Readme"
+              "title": "Backlinks for Bayes' Theorem Workbook"
             }
           },
           {
@@ -171,21 +171,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monte_Carlo_Simulation/Readme.md",
+                "file": "Bayes Theorem/Bayes' Theorem Workbook.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Readme"
+              "title": "Outline of Bayes' Theorem Workbook"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,40 +200,41 @@
   },
   "active": "efc759e43d898924",
   "lastOpenFiles": [
+    "Monte Carlo Simulation Workbook -- dsai.md",
+    "AI-Learning-Workbooks/enhanced_echo_agent.md",
+    "Game Theory Final Projects Workbook -- deepseek-ai.md",
+    "Game Theory & Strategic Decision-Making Workbook.md",
+    "Cruise-Workbook-2026/README.md",
+    "🚢 Cruise Workbooks.md",
     "Hugging_Face/The Strategic Hugging Face Workbook.md",
-    "Hugging_Face/The Strategic Hugging Face Workbook.pdf",
     "Hugging_Face/README.md",
+    "Known Colab Github Picker Issue.md",
+    "Monte Carlo Simulation Workbook.md",
+    "Hugging Face Hobbyist Workbook.md",
+    "Jupyter Notebook Market Competition with Multiple Firms.md",
+    "Practical Portable Reader Game Theory for Everyday Life.md",
+    "FFT_ClaudeCodeGuide.md",
+    "The Strategic Hugging Face Workbook.md",
+    "SETUP.md",
+    "toolchain-diagram.svg",
+    "Bayes' Theorem Workbook.md",
+    "Got it! Here's the updated README with the Hugging Face.md",
+    "Your_Property_Tax_Refund_Personalized.md",
+    "Minnesota_Residency_Income_Tax_Guide.md",
+    "how do i multiple a 3x2 matrix times a 2x4.md",
+    "FFT-README.md",
+    "PrimaryExclusionRule.md",
+    "Hugging_Face/The Strategic Hugging Face Workbook.pdf",
     "Hugging_Face",
     "Hugging_Face-x/README.md",
     "Hugging_Face-x",
     "Hugging_Face/Hugging Face Hobbyist Workbook.md",
     "README.md",
-    "zzzzArchive/README copy.md",
-    "Game Theory (deepseek-based)/Game Theory & Strategic Decision-Making Workbook -- deepseek-ai.md",
-    "Game Theory (deepseek-based)/Game Theory & Strategic Decision-Making Workbook.md",
-    "Game Theory (deepseek-based)/Game Theory & Strategic Decision-Making Workbook-2.md",
     "Game Theory (deepseek-based)/Game Theory & Strategic Decision-Making Workbook-2.pdf",
-    "Game Theory (deepseek-based)/Jupyter Notebook- Market Competition with Multiple Firms -- deepseek-ai.md",
-    "Game Theory (deepseek-based)/Game Theory Final Projects Workbook -- deepseek-ai.md",
-    "Game Theory (deepseek-based)/Game-Theory-Final-Projects-Workbook-deepseek-ai.md",
-    "Game Theory (deepseek-based)/Game-Theory-Final-Assessment-deepseek-ai.md",
-    "Monte_Carlo_Simulation/Monte Carlo Simulation Workbook-deepseek.md",
-    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/How to Use This in Jupyter Notebook.md",
-    "Known Colab Github Picker Issue.md",
-    "Bayes Theorem/Bayes_Theorem_WorkbooK_plots.md",
     "Bayes Theorem/Bayes_Theorem_Workbook.ipynb",
-    "Bayes Theorem/Bayes_Theorem_Workbook_plots.md",
-    "Bayes Theorem/Bayes' Theorem Workbook.md",
     "Bayes Theorem",
-    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/README.md",
     "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/README",
     "Monte_Carlo_Simulation/How to Use Jupyter Notebooks",
-    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/Untitled.md",
-    "Monte_Carlo_Simulation/Readme.md",
-    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/Jupyter Notebook Examples.md",
-    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/Article Overview.md",
-    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (Article).md",
-    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)",
-    "Monte_Carlo_Simulation/Untitled.md"
+    "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)"
   ]
 }

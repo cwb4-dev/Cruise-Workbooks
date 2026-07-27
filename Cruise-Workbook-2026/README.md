@@ -2,9 +2,7 @@
 
 **Atlantic Data Lab -- MSC Meraviglia 2026**  
 **Setup:** Blink Shell + DigitalOcean + Claude Code + GitHub + Starlink
-
------
-
+## Purpose: Use Claude Code to create 8-python apps.
 ## Project Structure
 
 ```
