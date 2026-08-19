@@ -56,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -177,7 +179,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Bayes' Theorem Workbook"
+              "title": "Outline"
             }
           }
         ],
@@ -200,6 +202,7 @@
   },
   "active": "efc759e43d898924",
   "lastOpenFiles": [
+    "Bayes Theorem/Bayes' Theorem Workbook copy.md",
     "Monte Carlo Simulation Workbook -- dsai.md",
     "AI-Learning-Workbooks/enhanced_echo_agent.md",
     "Game Theory Final Projects Workbook -- deepseek-ai.md",
@@ -229,7 +232,6 @@
     "Hugging_Face-x/README.md",
     "Hugging_Face-x",
     "Hugging_Face/Hugging Face Hobbyist Workbook.md",
-    "README.md",
     "Game Theory (deepseek-based)/Game Theory & Strategic Decision-Making Workbook-2.pdf",
     "Bayes Theorem/Bayes_Theorem_Workbook.ipynb",
     "Bayes Theorem",
