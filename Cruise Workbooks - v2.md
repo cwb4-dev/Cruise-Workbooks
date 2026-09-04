@@ -251,6 +251,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-*Last Updated: July 2026*
-
 This is now clean markdown without any code fences wrapping the entire document. You can copy this directly into your README.md file and it will render properly on GitHub.
