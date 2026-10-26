@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "5bd53a0eef008ccb",
+        "id": "3424acf828d6dd0e",
         "type": "tabs",
         "children": [
           {
-            "id": "d32eda688f8865e1",
+            "id": "3e3adaf6bf50ff2e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Monte_Carlo_Simulation/Monte Carlo Methods Decoded (article)/How to Use This in Jupyter Notebook.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "How to Use This in Jupyter Notebook"
-            }
-          },
-          {
-            "id": "efc759e43d898924",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bayes Theorem/Bayes' Theorem Workbook.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Bayes' Theorem Workbook"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 225.34439849853516
   },
   "right": {
     "id": "d78795162f870a3b",
@@ -203,6 +184,8 @@
   },
   "active": "66444c983f542f23",
   "lastOpenFiles": [
+    "Your_Property_Tax_Refund_Personalized.md",
+    "Bayes Theorem/Bayes' Theorem Workbook.md",
     "Blackjack to p-vs-np workbboks - grok/Readme.md",
     "Blackjack to p-vs-np workbboks - grok/chat-archive-blackjack-to-p-vs-np.md",
     "Blackjack to p-vs-np workbboks - grok/p-vs-np-9-cells.md",
@@ -231,8 +214,6 @@
     "Hugging_Face/The Strategic Hugging Face Workbook.md",
     "Hugging_Face/README.md",
     "Known Colab Github Picker Issue.md",
-    "Monte Carlo Simulation Workbook.md",
-    "Hugging Face Hobbyist Workbook.md",
     "toolchain-diagram.svg",
     "Hugging_Face/The Strategic Hugging Face Workbook.pdf",
     "Hugging_Face",
